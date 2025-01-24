@@ -1,6 +1,7 @@
-const mongoose  = require("mongoose")
+const mongoose  = require("mongoose");
+require('dotenv').config()
 
-const mongodbUrl = "mongodb+srv://martinattomaximiliano:dOCCfrCovee3ZHgn@cluster0.rf5ry.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const mongodbUrl = process.env.DB_URL;
 
 
 async function connectDB(){
